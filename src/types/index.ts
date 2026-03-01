@@ -132,11 +132,6 @@ export interface IMonthlyAnalytics extends Document {
   createdAt: Date;
   updatedAt: Date;
 }
-
-export interface AuthRequest extends Request {
-  user?: IUser;
-}
-
 export interface JwtPayload {
   userId: string;
   role: UserRole;
