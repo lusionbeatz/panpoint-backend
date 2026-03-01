@@ -2,14 +2,11 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": ".",
     "strict": false,
-    "noEmitOnError": false,
-    "resolveJsonModule": true
+    "skipLibCheck": true,
+    "esModuleInterop": true
   },
-  "include": ["src/**/*", "server.ts", "scripts/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts", "server.ts", "scripts/**/*.ts"]
 }
