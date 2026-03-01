@@ -6,13 +6,11 @@ services:
     env: node
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node dist/server.js
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 5000
       # Fill these in on Render dashboard → Environment tab
       - key: MONGO_URI
         sync: false
