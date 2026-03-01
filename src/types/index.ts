@@ -132,6 +132,11 @@ export interface IMonthlyAnalytics extends Document {
   createdAt: Date;
   updatedAt: Date;
 }
+import { Request } from "express";
+
+export interface AuthRequest extends Request {
+  user?: IUser;
+}
 export interface JwtPayload {
   userId: string;
   role: UserRole;
